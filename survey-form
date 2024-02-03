@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="locations.html">Locations</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<h1 id="title">MGB Hotel Customer Survey Form</h1>
+<img src="https://i.postimg.cc/brSSmTGD/498411396.jpg" alt="mgb">
+<p id="description">MGB Hotel at 2ten,a developed six story building around Thohoyandou with a Rating of 4.5(108 reviews).</p>
+<fieldset>
+<form id="survey-form">
+<label id="name-label">Name:
+<input id="name" type="text" placeholder="Enter your name" required></input>
+</label>
+<label id="email-label">Email:
+<input  id="email" type="email" placeholder="Enter your email" required></input>
+</label>
+<label id="number-label">Age:
+<input id="number" type="number" min="0" max="50" placeholder="Enter your age" required></input>
+</label>
+</form>
+</fieldset>
+<fieldset>
+<form id="survey-form">
+<label>Which type of food did you like most:
+<select id="dropdown" name="select food">
+<option> select food</option>
+</label>
+<label>
+<input type="checkbox" value="Ocean Favorites" class="inline">Ocean Favorites</input>
+</label>
+<label>
+<input type="checkbox" value="Staters" class="inline">Staters</input>
+</label>
+<label>
+<input type="checkbox" value="Premium Platters" class="inline">Premium Platters</input>
+</label>
+<label>
+<input type="checkbox" value="Poultry" class="inline">Poultry</input>
+</label>
+<label>
+<input type="checkbox" value="From the Grill" class="inline">From the Grill</input>
+</label>
+<label>
+<input type="checkbox" value="Potjies" class="inline">Potjies</input>
+</label>
+<label>
+<input type="checkbox" value="Light Meals" class="inline">Light Meals</input>
+</label>
+<label>
+<input type="checkbox" value="Add-ons" class="inline">Add-ons</input>
+</select>
+</label>
+<label>Which type of drink did you like most:
+<select id="dropdown" name="select drink">
+<option>select drink</option>
+<label>
+<input type="checkbox" value="Beers" class="inline">Beers</input>
+</label>
+<label>
+<input type="checkbox" value="Rums" class="inline">Rums</input>
+</label>
+<label>
+<input type="checkbox" value="Ciders" class="inline">Ciders</input>
+</label>
+<label>
+<input type="checkbox" value="Cocktails" class="inline">Cocktails</input>
+</label>
+<label>
+<input type="checkbox" value="Brandy" class="inline">Brandy</input>
+</label>
+<label>
+<input type="checkbox" value="Whiskey" class="inline">Whiskey</input>
+</label>
+<label>
+<input type="checkbox" value="Shooters" class="inline">Shooters</input>
+</label>
+<label>
+<input type="checkbox" value="Vodka" class="inline">Vodka</input>
+</select>
+</label>
+<label>Which type of dessert did you like most:
+<select id="dropdown" name="select dessert" >
+<option> select dessert</option>
+</label>
+<label>
+<input type="checkbox" value="Ice cream" class="inline">Ice cream</input>
+</label>
+<label>
+<input type="checkbox" value="Malva Pudding"  class="inline">Malva pudding</input>
+</label>
+<label>
+<input type="checkbox" value="Chocolate Brownies" class="inline">Chocolate Brownies</input>
+</label>
+<label>
+<input type="checkbox" value="Cakes" class="inline">Cakes</input>
+</label>
+<label>
+<input type="checkbox" value="Fresh cut salads" class="inline">Fresh cut salads</input>
+</label>
+<label>
+<input type="checkbox" value="Fruits cut salads" class="inline">Fruits cut salads</input>
+</select>
+</label>
+</form>
+</fieldset>
+<fieldset>
+<form id="survey-form">
+<label>Would you recommend MGB Hotel to anyone?
+</label>
+<label>
+<input value="Yes" name="text" type="radio" class="inline">Yes</input>
+</label>
+<label>
+<input value="No" name="text" type="radio" class="inline">No</input>
+</label>
+<label>
+<input value="Maybe" name="text" type="radio" class="inline">Maybe</input>
+</label>
+<label>Would you visit MGB Hotel again?
+</label>
+<label>
+<input value="Yes" name="select" type="radio" class="inline">Yes</input>
+</label>
+<label>
+<input value="No" name="select" type="radio" class="inline">No</input>
+</label>
+<label>
+<input value="Maybe" name="select" type="radio" class="inline">Maybe</input>
+</label>
+</form>
+</fieldset>
+<fieldset>
+<form id="survey-form">
+<textarea placeholder="write your customer service experience here" row="10" cols="60"></textarea>
+</form>
+<form id="survey-form">
+<input id="submit" type="submit"></input>
+</fieldset>
+</form>
+</body>
+</html>
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  
+ 
+  background-color: white;
+  font-family: verdana, sans-serif;
+  font-size: 1rem;
+  color:black;
+}
+
+h1{
+  margin:1em auto;
+  color:black;
+  width:100%;
+  position:relative;
+  text-align: center;
+}
+img{width:90%;
+padding-left: 15px;
+}
+
+
+p{margin: 3rem auto;
+position: relative;
+width:80%;
+text-align: center;
+font-family:Tahoma;
+font-size: 20px;
+font-weight: bold;
+color:black;
+}
+fieldset {
+  padding:2rem 0;
+  border:none;
+}
+
+.container {background-color:white ;
+margin: 2rem 15%;
+}
+label {
+  display:block;
+  margin: 0.5rem 0;
+font-weight: bold;
+  }
+select {
+  background-color:black;
+  margin:10px 0 0 0;
+  width:100%;
+  min-height:1em;
+}
+
+input, textarea {
+  
+  border: 1px solid black;
+  color: black;
+  border:1px solid black;
+}
+
+::placeholder {
+  color:black;
+  opacity: 1;
+}
+
+.inline{
+  width:unset;
+  margin:0 0.5rem 0 0;
+  vertical-align: center;
+}
+
+
+
+#dropdown {
+  color:white;
+}
+.submit{padding-left:50px;}
+
+input[type="text"] {
+  margin: 0 0;
+}
+
+.select{color: black;
+
+}
+
+input[type="submit"] {
+  display:block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.0rem;
+  border: solid 1px black;
+  min-width: 300px;
+}    
+.textarea{width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
